@@ -516,11 +516,13 @@ printAllElements('td')
 */
 
 const colore = function () {
-  let link = document.querySelectorAll('#link');
-  link.style.backgroundColor = 'red';
+  let link = document.querySelectorAll('a');
+  link.forEach( link => {
+    link.style.backgroundColor = 'red';
+  })
 }
 
-//console.log(function())
+colore();
 
 /* ESERCIZIO 24
   Scrivi una funzione per aggiungere un nuovo elemento alla lista non ordinata con id "myList".
